@@ -2,7 +2,6 @@
   "name": "my-v0-project",
   "version": "0.1.0",
   "private": true,
-
   "scripts": {
     "build": "next build",
     "dev": "next dev",
@@ -76,5 +75,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-JCoder/ynzdetail.git"
+  },
+  "bugs": {
+    "url": "https://github.com/B-JCoder/ynzdetail/issues"
+  },
+  "homepage": "https://github.com/B-JCoder/ynzdetail#readme",
   "description": ""
 }
