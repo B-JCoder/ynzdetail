@@ -7,14 +7,14 @@ export default function TestimonialsSection() {
       name: "Michael Chen",
       location: "Toronto, ON",
       rating: 5,
-      text: "Absolutely incredible work! My BMW looks better than when I first bought it. The attention to detail is unmatched.",
+      text: "Absolutely incredible work! My BMW looks better than when I first bought it. Carlux's attention to detail is unmatched.",
       image: "/placeholder.svg?height=80&width=80",
     },
     {
       name: "Sarah Johnson",
       location: "Vancouver, BC",
       rating: 5,
-      text: "YNZ Detail transformed my car completely. The ceramic coating has kept it looking pristine for months. Highly recommend!",
+      text: "Carlux transformed my car completely. The ceramic coating has kept it looking pristine for months. Highly recommend!",
       image: "/placeholder.svg?height=80&width=80",
     },
     {
@@ -42,7 +42,7 @@ export default function TestimonialsSection() {
       name: "Lisa Park",
       location: "Edmonton, AB",
       rating: 5,
-      text: "My luxury sedan has never looked better. The paint correction work was flawless. These guys are true professionals.",
+      text: "My luxury sedan has never looked better. The paint correction work was flawless. Carlux are true professionals.",
       image: "/placeholder.svg?height=80&width=80",
     },
   ]
@@ -53,8 +53,8 @@ export default function TestimonialsSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">What Our Customers Say</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Don't just take our word for it. Here's what our satisfied customers have to say about our premium detailing
-            services.
+            Don't just take our word for it. Here's what our satisfied customers have to say about Carlux premium
+            detailing services.
           </p>
         </div>
 

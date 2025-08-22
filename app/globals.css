@@ -120,6 +120,46 @@
     animation: ripple 2s infinite;
   }
 
+  /* Responsive typography */
+  .responsive-heading {
+    @apply text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl;
+  }
+
+  .responsive-subheading {
+    @apply text-lg sm:text-xl md:text-2xl lg:text-3xl;
+  }
+
+  .responsive-text {
+    @apply text-sm sm:text-base md:text-lg;
+  }
+
+  .responsive-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+
+  .responsive-margin {
+    @apply mx-4 sm:mx-6 lg:mx-8;
+  }
+
+  .section-spacing {
+    @apply py-12 sm:py-16 md:py-20 lg:py-24;
+  }
+
+  /* Improved button responsiveness */
+  .btn-responsive {
+    @apply px-4 py-2 sm:px-6 sm:py-3 md:px-8 md:py-4 text-sm sm:text-base md:text-lg;
+  }
+
+  /* Card responsiveness */
+  .card-responsive {
+    @apply p-4 sm:p-6 md:p-8;
+  }
+
+  /* Grid responsiveness */
+  .grid-responsive {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8;
+  }
+
   @keyframes fadeInUp {
     from {
       opacity: 0;

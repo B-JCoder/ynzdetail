@@ -60,10 +60,10 @@ export default function BookingPage() {
     <div className="min-h-screen bg-gray-900 pt-20">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Book Your Appointment</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Book Your Appointment with Carlux</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Schedule your premium car detailing service. Fill out the form below and we'll confirm your appointment
-            within 24 hours.
+            Schedule your premium car detailing service with Carlux. Fill out the form below and we'll confirm your
+            appointment within 24 hours.
           </p>
         </div>
 
@@ -221,7 +221,7 @@ export default function BookingPage() {
               </div>
 
               <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
-                Book Appointment
+                Book Appointment with Carlux
               </Button>
             </form>
           </CardContent>
@@ -233,17 +233,21 @@ export default function BookingPage() {
             <CardContent className="p-6">
               <h3 className="text-white font-semibold mb-4">Need Help?</h3>
               <p className="text-gray-300 mb-4">
-                Have questions about our services or need to discuss a custom package? Contact us directly.
+                Have questions about our services or need to discuss a custom package? Contact Carlux directly.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
-                  <Phone className="mr-2 h-4 w-4" />
-                  Call Us
-                </Button>
-                <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
-                  <Mail className="mr-2 h-4 w-4" />
-                  Email Us
-                </Button>
+                <a href="tel:+14384087454">
+                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
+                    <Phone className="mr-2 h-4 w-4" />
+                    Call Us
+                  </Button>
+                </a>
+                <a href="mailto:yanislaroche@gmail.com">
+                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
+                    <Mail className="mr-2 h-4 w-4" />
+                    Email Us
+                  </Button>
+                </a>
               </div>
             </CardContent>
           </Card>

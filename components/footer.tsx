@@ -10,14 +10,14 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
               <Car className="h-8 w-8 text-blue-500" />
-              <span className="text-2xl font-bold text-white">YNZ Detail</span>
+              <span className="text-2xl font-bold text-white">Carlux</span>
             </Link>
             <p className="text-gray-300 mb-4">
               Premium car detailing services across Canada. Transform your vehicle with our professional care.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://facebook.com/ynzdetail"
+                href="https://facebook.com/carlux"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-blue-400 transition-colors"
@@ -25,7 +25,7 @@ export default function Footer() {
                 <Facebook className="h-5 w-5" />
               </a>
               <a
-                href="https://instagram.com/ynzdetail"
+                href="https://instagram.com/carlux"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-pink-400 transition-colors"
@@ -109,14 +109,14 @@ export default function Footer() {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-blue-400" />
-                <a href="tel:+1234567890" className="text-gray-300 text-sm hover:text-blue-400">
-                  +1 (234) 567-8900
+                <a href="tel:+14384087454" className="text-gray-300 text-sm hover:text-blue-400">
+                  +1 438-408-7454
                 </a>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-blue-400" />
-                <a href="mailto:info@ynzdetail.ca" className="text-gray-300 text-sm hover:text-blue-400">
-                  info@ynzdetail.ca
+                <a href="mailto:yanislaroche@gmail.com" className="text-gray-300 text-sm hover:text-blue-400">
+                  yanislaroche@gmail.com
                 </a>
               </div>
             </div>
@@ -125,7 +125,7 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-400 text-sm">
-            © 2024 YNZ Detail. All rights reserved. | Professional Car Detailing Services in Canada
+            © 2024 Carlux. All rights reserved. | Professional Car Detailing Services in Canada
           </p>
         </div>
       </div>

@@ -38,13 +38,13 @@ export default function Navbar() {
             <div className="relative w-12 h-12 hexagon-clip bg-gradient-to-br from-blue-400 to-blue-600 p-0.5">
               <Image
                 src="/images/logo.jpg"
-                alt="YNZ Detail Logo"
+                alt="Carlux Logo"
                 width={48}
                 height={48}
                 className="w-full h-full object-contain hexagon-clip"
               />
             </div>
-            <span className="text-2xl font-bold ynz-yellow tracking-wider">YNZ DETAIL</span>
+            <span className="text-2xl font-bold ynz-yellow tracking-wider">CARLUX</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -58,9 +58,11 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <Button className="bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan transition-all duration-300 animate-glow">
-              Book Now
-            </Button>
+            <Link href="/booking">
+              <Button className="bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan transition-all duration-300 animate-glow">
+                Book Now
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -85,11 +87,13 @@ export default function Navbar() {
                   {item.name}
                 </Link>
               ))}
-              <div className="px-3 py-2">
-                <Button className="w-full bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan">
-                  Book Now
-                </Button>
-              </div>
+              <Link href="/booking">
+                <div className="px-3 py-2">
+                  <Button className="w-full bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan">
+                    Book Now
+                  </Button>
+                </div>
+              </Link>
             </div>
           </div>
         )}

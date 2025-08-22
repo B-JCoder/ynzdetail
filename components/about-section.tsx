@@ -30,12 +30,12 @@ export default function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F0E14A] mb-6 tracking-wider">ABOUT YNZ DETAIL</h2>
+            <h2 className="text-3xl sm:text-4xl font-bold text-[#F0E14A] mb-6 tracking-wider">ABOUT CARLUX</h2>
             <div className="w-24 h-1 bg-[#00BFFF] mb-6"></div>
             <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              At <span className="text-[#00BFFF] font-semibold">YNZ Detail</span>, we're passionate about transforming
-              your vehicle into a masterpiece. With years of experience in the automotive detailing industry, we've
-              built our reputation on delivering exceptional results that exceed expectations.
+              At <span className="text-[#00BFFF] font-semibold">Carlux</span>, we're passionate about transforming your
+              vehicle into a masterpiece. With years of experience in the automotive detailing industry, we've built our
+              reputation on delivering exceptional results that exceed expectations.
             </p>
             <p className="text-gray-300 text-lg mb-8 leading-relaxed">
               Our team of skilled professionals uses only the finest products and cutting-edge techniques to ensure your

@@ -1,6 +1,7 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { Sparkles, Car, Paintbrush, Shield, Droplets, AirVentIcon as Vacuum } from "lucide-react"
+import { Sparkles, Car, Paintbrush, Shield, Droplets, Album as Vacuum } from "lucide-react"
+import Link from "next/link"
 
 export default function ServicesSection() {
   const services = [
@@ -69,7 +70,7 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <Card
               key={index}
@@ -105,9 +106,11 @@ export default function ServicesSection() {
 
                 <div className="flex items-center justify-between">
                   <span className="text-[#00BFFF] font-bold text-lg">{service.price}</span>
-                  <Button size="sm" className="bg-[#FF3C38] hover:bg-[#FF5555] text-white font-bold">
-                    Book Service
-                  </Button>
+                  <Link href="/booking">
+                    <Button size="sm" className="bg-[#FF3C38] hover:bg-[#FF5555] text-white font-bold">
+                      Book Service
+                    </Button>
+                  </Link>
                 </div>
               </CardContent>
             </Card>

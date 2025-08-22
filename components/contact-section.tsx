@@ -36,7 +36,7 @@ export default function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">Get In Touch</h2>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Ready to transform your vehicle? Contact us today to schedule your appointment or get a custom quote for
+            Ready to transform your vehicle? Contact Carlux today to schedule your appointment or get a custom quote for
             your detailing needs.
           </p>
         </div>
@@ -120,8 +120,8 @@ export default function ContactSection() {
                     <Phone className="h-5 w-5 text-blue-400 mt-1" />
                     <div>
                       <p className="text-white font-medium">Phone</p>
-                      <a href="tel:+1234567890" className="text-blue-400 hover:text-blue-300">
-                        +1 (234) 567-8900
+                      <a href="tel:+14384087454" className="text-blue-400 hover:text-blue-300">
+                        +1 438-408-7454
                       </a>
                     </div>
                   </div>
@@ -130,8 +130,8 @@ export default function ContactSection() {
                     <Mail className="h-5 w-5 text-blue-400 mt-1" />
                     <div>
                       <p className="text-white font-medium">Email</p>
-                      <a href="mailto:info@ynzdetail.ca" className="text-blue-400 hover:text-blue-300">
-                        info@ynzdetail.ca
+                      <a href="mailto:yanislaroche@gmail.com" className="text-blue-400 hover:text-blue-300">
+                        yanislaroche@gmail.com
                       </a>
                     </div>
                   </div>
@@ -156,7 +156,7 @@ export default function ContactSection() {
 
                 <div className="flex space-x-4 mb-6">
                   <a
-                    href="https://facebook.com/ynzdetail"
+                    href="https://facebook.com/carlux"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 bg-blue-600 hover:bg-blue-700 rounded-lg transition-colors"
@@ -164,7 +164,7 @@ export default function ContactSection() {
                     <Facebook className="h-6 w-6 text-white" />
                   </a>
                   <a
-                    href="https://instagram.com/ynzdetail"
+                    href="https://instagram.com/carlux"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-center w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 rounded-lg transition-colors"
@@ -174,7 +174,15 @@ export default function ContactSection() {
                 </div>
 
                 <div className="space-y-3">
-                  <Button className="w-full bg-green-600 hover:bg-green-700 text-white">WhatsApp Us</Button>
+                  <a href="https://wa.me/14384087454" target="_blank" rel="noopener noreferrer">
+                    <Button className="w-full bg-green-600 hover:bg-green-700 text-white">WhatsApp Us</Button>
+                  </a>
+                  <a href="tel:+14384087454">
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Call Us</Button>
+                  </a>
+                  <a href="mailto:yanislaroche@gmail.com">
+                    <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Email Us</Button>
+                  </a>
                   <Button className="w-full bg-blue-600 hover:bg-blue-700 text-white">Book Appointment</Button>
                 </div>
               </CardContent>

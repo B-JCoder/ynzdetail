@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Star } from "lucide-react"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -32,25 +33,29 @@ export default function HeroSection() {
           </h1>
 
           <p className="text-xl sm:text-2xl text-gray-200 mb-8 max-w-2xl mx-auto leading-relaxed">
-            Transform your vehicle with our professional detailing services.
+            Transform your vehicle with Carlux professional detailing services.
             <span className="ynz-cyan font-semibold"> Precision, quality, and attention to every detail.</span>
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-            <Button
-              size="lg"
-              className="bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold px-8 py-4 text-lg border-2 border-ynz-cyan transition-all duration-300 water-ripple"
-            >
-              Book Now
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-ynz-cyan ynz-cyan hover:bg-blue-500 hover:text-white px-8 py-4 text-lg bg-transparent font-bold transition-all duration-300"
-            >
-              View Services
-            </Button>
+            <Link href="/booking">
+              <Button
+                size="lg"
+                className="bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold px-8 py-4 text-lg border-2 border-ynz-cyan transition-all duration-300 water-ripple"
+              >
+                Book Now
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+            <Link href="#services">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-ynz-cyan ynz-cyan hover:bg-blue-500 hover:text-white px-8 py-4 text-lg bg-transparent font-bold transition-all duration-300"
+              >
+                View Services
+              </Button>
+            </Link>
           </div>
 
           <div className="flex items-center justify-center space-x-4 text-gray-200">

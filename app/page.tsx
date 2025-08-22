@@ -8,12 +8,12 @@ import ContactSection from "@/components/contact-section"
 import WhatsAppFloat from "@/components/whatsapp-float"
 
 export const metadata: Metadata = {
-  title: "YNZ Detail - Premium Car Detailing & Auto Care Services in Canada",
+  title: "Carlux - Premium Car Detailing & Auto Care Services in Canada",
   description:
     "Professional car detailing services in Canada. Exterior cleaning, interior detailing, paint correction, ceramic coating, and premium auto care. Book your appointment today!",
-  keywords: "car detailing, auto care, paint correction, ceramic coating, car wash, Canada, YNZ Detail",
+  keywords: "car detailing, auto care, paint correction, ceramic coating, car wash, Canada, Carlux",
   openGraph: {
-    title: "YNZ Detail - Premium Car Detailing Services",
+    title: "Carlux - Premium Car Detailing Services",
     description:
       "Transform your vehicle with our professional car detailing services. Premium quality, attention to detail.",
     type: "website",

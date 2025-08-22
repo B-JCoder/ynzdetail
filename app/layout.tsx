@@ -8,34 +8,34 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "YNZ Detail - Premium Car Detailing Services in Canada",
+  title: "Carlux - Premium Car Detailing Services in Canada",
   description:
-    "Professional car detailing, paint correction, ceramic coating, and auto care services across Canada. Transform your vehicle with YNZ Detail.",
+    "Professional car detailing, paint correction, ceramic coating, and auto care services across Canada. Transform your vehicle with Carlux.",
   keywords: "car detailing, auto care, paint correction, ceramic coating, car wash, Canada, professional detailing",
-  authors: [{ name: "YNZ Detail" }],
-  creator: "YNZ Detail",
-  publisher: "YNZ Detail",
+  authors: [{ name: "Carlux" }],
+  creator: "Carlux",
+  publisher: "Carlux",
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://ynzdetail.ca"),
+  metadataBase: new URL("https://carlux.ca"),
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    title: "YNZ Detail - Premium Car Detailing Services",
+    title: "Carlux - Premium Car Detailing Services",
     description:
       "Transform your vehicle with our professional car detailing services. Premium quality, attention to detail.",
-    url: "https://ynzdetail.ca",
-    siteName: "YNZ Detail",
+    url: "https://carlux.ca",
+    siteName: "Carlux",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "YNZ Detail - Professional Car Detailing",
+        alt: "Carlux - Professional Car Detailing",
       },
     ],
     locale: "en_CA",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "YNZ Detail - Premium Car Detailing Services",
+    title: "Carlux - Premium Car Detailing Services",
     description: "Professional car detailing services across Canada. Transform your vehicle today.",
     images: ["/og-image.jpg"],
   },
@@ -58,7 +58,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
