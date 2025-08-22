@@ -72,7 +72,6 @@ export default function HeroSection() {
         </div>
       </div>
 
-      {/* Scroll Indicator */}
       
       
     </section>
