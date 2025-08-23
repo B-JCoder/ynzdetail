@@ -26,9 +26,9 @@ export default function HeroSection() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center max-w-5xl mx-auto">
+    <div className="relative z-10 text-center max-w-5xl mx-auto pt-6 sm:pt-10 lg:pt-24">
         <div className="animate-slide-up">
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-snug sm:leading-tight">
+          <h1 className="text-2xl sm:text-5xl lg:text-7xl font-bold text-white mb-6 sm:mb-8 leading-snug sm:leading-tight">
             <span className="text-luxury-gold">LUXURY</span>
             <br />
             <span className="text-white">CAR DETAILING</span>
