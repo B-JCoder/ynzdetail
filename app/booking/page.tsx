@@ -26,12 +26,12 @@ export default function BookingPage() {
   })
 
   const services = [
-    { value: "exterior", label: "Exterior Cleaning - $80+" },
-    { value: "interior", label: "Interior Detailing - $120+" },
-    { value: "paint", label: "Paint Correction - $300+" },
-    { value: "ceramic", label: "Ceramic Coating - $800+" },
-    { value: "full", label: "Full Detail Package - $400+" },
-    { value: "maintenance", label: "Premium Maintenance - $150+" },
+    { value: "premium-wash", label: "Premium Wash - From $120" },
+    { value: "interior-luxury", label: "Interior Luxury - From $180" },
+    { value: "paint-perfection", label: "Paint Perfection - From $450" },
+    { value: "ceramic-shield", label: "Ceramic Shield - From $1200" },
+    { value: "complete-luxury", label: "Complete Luxury - From $800" },
+    { value: "maintenance-elite", label: "Maintenance Elite - From $250" },
   ]
 
   const timeSlots = [
@@ -48,8 +48,7 @@ export default function BookingPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    console.log("Booking submitted:", formData)
-    // Handle booking submission
+    console.log("Luxury booking submitted:", formData)
   }
 
   const handleChange = (field: string, value: string) => {
@@ -57,30 +56,31 @@ export default function BookingPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-900 pt-20">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-3xl sm:text-4xl font-bold text-white mb-4">Book Your Appointment with Carlux</h1>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Schedule your premium car detailing service with Carlux. Fill out the form below and we'll confirm your
-            appointment within 24 hours.
+    <div className="min-h-screen bg-black pt-24 geometric-bg">
+      <div className="max-w-5xl mx-auto container-padding py-16">
+        <div className="text-center mb-16 animate-slide-up">
+          <h1 className="heading-lg text-luxury-gold mb-6 tracking-wide">BOOK LUXURY SERVICE</h1>
+          <div className="w-20 h-1 bg-luxury-gold mx-auto mb-8"></div>
+          <p className="text-luxury text-xl max-w-3xl mx-auto leading-relaxed">
+            Schedule your premium automotive detailing experience with Carlux. We'll confirm your appointment within 24
+            hours.
           </p>
         </div>
 
-        <Card className="bg-gray-800/50 border-gray-700">
-          <CardHeader>
-            <CardTitle className="text-white text-2xl flex items-center">
-              <Calendar className="mr-2 h-6 w-6 text-blue-400" />
+        <Card className="glass-luxury border-luxury-gold hover-lift">
+          <CardHeader className="pb-8">
+            <CardTitle className="text-luxury-gold text-3xl font-heading flex items-center justify-center">
+              <Calendar className="mr-4 h-8 w-8" />
               Appointment Details
             </CardTitle>
           </CardHeader>
-          <CardContent>
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <CardContent className="p-10">
+            <form onSubmit={handleSubmit} className="space-y-10">
               {/* Personal Information */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-white font-semibold flex items-center">
-                    <User className="mr-2 h-5 w-5 text-blue-400" />
+              <div className="grid md:grid-cols-2 gap-10">
+                <div className="space-y-6">
+                  <h3 className="text-luxury-gold font-heading font-bold text-xl flex items-center">
+                    <User className="mr-3 h-6 w-6" />
                     Personal Information
                   </h3>
 
@@ -88,7 +88,7 @@ export default function BookingPage() {
                     placeholder="Full Name"
                     value={formData.name}
                     onChange={(e) => handleChange("name", e.target.value)}
-                    className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                    className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                     required
                   />
 
@@ -97,7 +97,7 @@ export default function BookingPage() {
                     placeholder="Email Address"
                     value={formData.email}
                     onChange={(e) => handleChange("email", e.target.value)}
-                    className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                    className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                     required
                   />
 
@@ -106,63 +106,63 @@ export default function BookingPage() {
                     placeholder="Phone Number"
                     value={formData.phone}
                     onChange={(e) => handleChange("phone", e.target.value)}
-                    className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                    className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                     required
                   />
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-white font-semibold flex items-center">
-                    <Car className="mr-2 h-5 w-5 text-blue-400" />
+                <div className="space-y-6">
+                  <h3 className="text-luxury-gold font-heading font-bold text-xl flex items-center">
+                    <Car className="mr-3 h-6 w-6" />
                     Vehicle Information
                   </h3>
 
                   <Select onValueChange={(value) => handleChange("vehicleType", value)}>
-                    <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
+                    <SelectTrigger className="bg-luxury-charcoal border-gray-600 text-white h-14 text-lg">
                       <SelectValue placeholder="Vehicle Type" />
                     </SelectTrigger>
-                    <SelectContent>
-                      <SelectItem value="sedan">Sedan</SelectItem>
-                      <SelectItem value="suv">SUV</SelectItem>
-                      <SelectItem value="truck">Truck</SelectItem>
-                      <SelectItem value="coupe">Coupe</SelectItem>
+                    <SelectContent className="bg-luxury-charcoal border-gray-600">
+                      <SelectItem value="luxury-sedan">Luxury Sedan</SelectItem>
+                      <SelectItem value="luxury-suv">Luxury SUV</SelectItem>
+                      <SelectItem value="sports-car">Sports Car</SelectItem>
+                      <SelectItem value="luxury-coupe">Luxury Coupe</SelectItem>
                       <SelectItem value="convertible">Convertible</SelectItem>
-                      <SelectItem value="luxury">Luxury Vehicle</SelectItem>
+                      <SelectItem value="exotic">Exotic Vehicle</SelectItem>
                     </SelectContent>
                   </Select>
 
                   <Input
-                    placeholder="Year (e.g., 2020)"
+                    placeholder="Year (e.g., 2023)"
                     value={formData.vehicleYear}
                     onChange={(e) => handleChange("vehicleYear", e.target.value)}
-                    className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                    className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                   />
 
-                  <div className="grid grid-cols-2 gap-3">
+                  <div className="grid grid-cols-2 gap-4">
                     <Input
                       placeholder="Make (e.g., BMW)"
                       value={formData.vehicleMake}
                       onChange={(e) => handleChange("vehicleMake", e.target.value)}
-                      className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                      className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                     />
                     <Input
                       placeholder="Model (e.g., X5)"
                       value={formData.vehicleModel}
                       onChange={(e) => handleChange("vehicleModel", e.target.value)}
-                      className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                      className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 h-14 text-lg"
                     />
                   </div>
                 </div>
               </div>
 
               {/* Service Selection */}
-              <div className="space-y-4">
-                <h3 className="text-white font-semibold">Service Selection</h3>
+              <div className="space-y-6">
+                <h3 className="text-luxury-gold font-heading font-bold text-xl">Luxury Service Selection</h3>
                 <Select onValueChange={(value) => handleChange("service", value)} required>
-                  <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
-                    <SelectValue placeholder="Select a service" />
+                  <SelectTrigger className="bg-luxury-charcoal border-gray-600 text-white h-14 text-lg">
+                    <SelectValue placeholder="Select your premium service" />
                   </SelectTrigger>
-                  <SelectContent>
+                  <SelectContent className="bg-luxury-charcoal border-gray-600">
                     {services.map((service) => (
                       <SelectItem key={service.value} value={service.value}>
                         {service.label}
@@ -173,31 +173,31 @@ export default function BookingPage() {
               </div>
 
               {/* Date and Time */}
-              <div className="grid md:grid-cols-2 gap-6">
-                <div className="space-y-4">
-                  <h3 className="text-white font-semibold flex items-center">
-                    <Calendar className="mr-2 h-5 w-5 text-blue-400" />
+              <div className="grid md:grid-cols-2 gap-10">
+                <div className="space-y-6">
+                  <h3 className="text-luxury-gold font-heading font-bold text-xl flex items-center">
+                    <Calendar className="mr-3 h-6 w-6" />
                     Preferred Date
                   </h3>
                   <Input
                     type="date"
                     value={formData.date}
                     onChange={(e) => handleChange("date", e.target.value)}
-                    className="bg-gray-700 border-gray-600 text-white"
+                    className="bg-luxury-charcoal border-gray-600 text-white h-14 text-lg"
                     required
                   />
                 </div>
 
-                <div className="space-y-4">
-                  <h3 className="text-white font-semibold flex items-center">
-                    <Clock className="mr-2 h-5 w-5 text-blue-400" />
+                <div className="space-y-6">
+                  <h3 className="text-luxury-gold font-heading font-bold text-xl flex items-center">
+                    <Clock className="mr-3 h-6 w-6" />
                     Preferred Time
                   </h3>
                   <Select onValueChange={(value) => handleChange("time", value)} required>
-                    <SelectTrigger className="bg-gray-700 border-gray-600 text-white">
+                    <SelectTrigger className="bg-luxury-charcoal border-gray-600 text-white h-14 text-lg">
                       <SelectValue placeholder="Select time" />
                     </SelectTrigger>
-                    <SelectContent>
+                    <SelectContent className="bg-luxury-charcoal border-gray-600">
                       {timeSlots.map((time) => (
                         <SelectItem key={time} value={time}>
                           {time}
@@ -209,42 +209,42 @@ export default function BookingPage() {
               </div>
 
               {/* Additional Notes */}
-              <div className="space-y-4">
-                <h3 className="text-white font-semibold">Additional Notes</h3>
+              <div className="space-y-6">
+                <h3 className="text-luxury-gold font-heading font-bold text-xl">Special Requests</h3>
                 <Textarea
-                  placeholder="Any special requests or notes about your vehicle's condition..."
+                  placeholder="Any special requests or notes about your luxury vehicle's condition..."
                   value={formData.notes}
                   onChange={(e) => handleChange("notes", e.target.value)}
-                  rows={4}
-                  className="bg-gray-700 border-gray-600 text-white placeholder-gray-400"
+                  rows={5}
+                  className="bg-luxury-charcoal border-gray-600 text-white placeholder-gray-400 text-lg"
                 />
               </div>
 
-              <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 text-lg">
-                Book Appointment with Carlux
+              <Button type="submit" className="w-full btn-luxury text-xl py-6 animate-gold-glow">
+                Book Luxury Service with Carlux
               </Button>
             </form>
           </CardContent>
         </Card>
 
         {/* Contact Information */}
-        <div className="mt-12 text-center">
-          <Card className="bg-gray-800/50 border-gray-700">
-            <CardContent className="p-6">
-              <h3 className="text-white font-semibold mb-4">Need Help?</h3>
-              <p className="text-gray-300 mb-4">
-                Have questions about our services or need to discuss a custom package? Contact Carlux directly.
+        <div className="mt-16 text-center">
+          <Card className="glass-luxury border-luxury-gold hover-lift">
+            <CardContent className="p-10">
+              <h3 className="text-luxury-gold font-heading font-bold text-2xl mb-6">Need Assistance?</h3>
+              <p className="text-gray-300 mb-8 text-lg leading-relaxed">
+                Have questions about our luxury services or need to discuss a custom package? Contact Carlux directly.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <a href="tel:+14384087454">
-                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
-                    <Phone className="mr-2 h-4 w-4" />
+                  <Button className="btn-luxury-outline px-8 py-4 text-lg">
+                    <Phone className="mr-3 h-5 w-5" />
                     Call Us
                   </Button>
                 </a>
                 <a href="mailto:yanislaroche@gmail.com">
-                  <Button variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-700 bg-transparent">
-                    <Mail className="mr-2 h-4 w-4" />
+                  <Button className="btn-luxury-outline px-8 py-4 text-lg">
+                    <Mail className="mr-3 h-5 w-5" />
                     Email Us
                   </Button>
                 </a>
