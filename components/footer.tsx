@@ -7,13 +7,13 @@ export default function Footer() {
     <footer className="bg-black border-t border-luxury-gold/20">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
         
-        {/* Top Row: Logo + Headings in one line */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 items-start">
+        {/* Top Row: Logo + Headings aligned */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
           
-          {/* Logo + Description */}
-          <div>
+          {/* Company Info */}
+          <div className="flex flex-col items-start">
             <div className="flex items-center space-x-4 mb-4">
-              <div className="relative w-20 h-20 md:w-24 md:h-24 flex-shrink-0">
+              <div className="relative w-20 h-20 md:w-24 md:h-24">
                 <Image
                   src="/images/logo.png"
                   alt="Carlux Montréal Logo"
@@ -22,18 +22,18 @@ export default function Footer() {
                   className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]"
                 />
               </div>
-              <div className="flex flex-col justify-center">
+              <div>
                 <span className="text-2xl font-heading font-bold text-white tracking-wider leading-none">
                   CARLUX
                 </span>
+                <br />
                 <span className="text-base text-luxury-gold tracking-widest leading-none">
                   MONTRÉAL
                 </span>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              Premium automotive detailing services across Canada. <br />
-              Where luxury meets perfection.
+            <p className="text-gray-300 mb-6 leading-relaxed max-w-xs">
+              Premium automotive detailing services across Canada. Where luxury meets perfection.
             </p>
             <div className="flex space-x-4">
               <a
@@ -56,9 +56,9 @@ export default function Footer() {
           </div>
 
           {/* Services */}
-          <div>
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-4">Services</h3>
-            <ul className="space-y-2">
+          <div className="flex flex-col items-start">
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Services</h3>
+            <ul className="space-y-3">
               <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Premium Wash</Link></li>
               <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Interior Luxury</Link></li>
               <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Paint Perfection</Link></li>
@@ -67,35 +67,32 @@ export default function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div>
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+          <div className="flex flex-col items-start">
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Quick Links</h3>
+            <ul className="space-y-3">
               <li><Link href="#home" className="text-gray-300 hover:text-luxury-gold">Home</Link></li>
               <li><Link href="#about" className="text-gray-300 hover:text-luxury-gold">About</Link></li>
               <li><Link href="#gallery" className="text-gray-300 hover:text-luxury-gold">Gallery</Link></li>
               <li><Link href="/booking" className="text-gray-300 hover:text-luxury-gold">Book Service</Link></li>
+              <li><Link href="#contact" className="text-gray-300 hover:text-luxury-gold">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div>
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-4">Contact</h3>
-            <div className="space-y-3">
+          <div className="flex flex-col items-start">
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Contact</h3>
+            <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <MapPin className="h-5 w-5 text-luxury-gold" />
                 <span className="text-gray-300">Canada Wide</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-5 w-5 text-luxury-gold" />
-                <a href="tel:+14384087454" className="text-gray-300 hover:text-luxury-gold">
-                  +1 438-408-7454
-                </a>
+                <a href="tel:+14384087454" className="text-gray-300 hover:text-luxury-gold">+1 438-408-7454</a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="h-5 w-5 text-luxury-gold" />
-                <a href="mailto:yanislaroche@gmail.com" className="text-gray-300 hover:text-luxury-gold">
-                  yanislaroche@gmail.com
-                </a>
+                <a href="mailto:yanislaroche@gmail.com" className="text-gray-300 hover:text-luxury-gold">yanislaroche@gmail.com</a>
               </div>
             </div>
           </div>
