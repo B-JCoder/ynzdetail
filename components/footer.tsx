@@ -4,104 +4,87 @@ import Image from "next/image"
 
 export default function Footer() {
   return (
-    <footer className="bg-black border-t border-luxury-gold/20">
-      <div className="max-w-7xl mx-auto px-6 md:px-12 py-16">
-        
-        {/* Top Row: Logo + Headings aligned */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-2">
+    <footer className="bg-black border-t border-gray-800">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-12">
+        {/* Top Row: 4 Columns */}
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           
-          {/* Company Info */}
-          <div className="flex flex-col items-start">
-            <div className="flex items-center space-x-4 mb-4">
-              <div className="relative w-20 h-20 md:w-24 md:h-24">
-                <Image
-                  src="/images/logo.png"
-                  alt="Carlux Montréal Logo"
-                  width={120}
-                  height={120}
-                  className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]"
-                />
-              </div>
+          {/* Logo + Text */}
+          <div>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/images/logo.png"
+                alt="Carlux Montréal Logo"
+                width={60}
+                height={60}
+                className="object-contain"
+              />
               <div>
-                <span className="text-2xl font-heading font-bold text-white tracking-wider leading-none">
-                  CARLUX
-                </span>
-                <br />
-                <span className="text-base text-luxury-gold tracking-widest leading-none">
-                  MONTRÉAL
-                </span>
+                <h2 className="text-xl font-bold text-white">CARLUX</h2>
+                <span className="text-sm text-luxury-gold tracking-wide">MONTRÉAL</span>
               </div>
             </div>
-            <p className="text-gray-300 mb-6 leading-relaxed max-w-xs">
-              Premium automotive detailing services across Canada. Where luxury meets perfection.
+            <p className="text-gray-400 text-sm">
+              Premium automotive detailing services across Canada.  
+              Where luxury meets perfection.
             </p>
-            <div className="flex space-x-4">
-              <a
-                href="https://facebook.com/carlux"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-luxury-gold transition-colors duration-300"
-              >
-                <Facebook className="h-6 w-6" />
+            <div className="flex space-x-4 mt-4">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-luxury-gold">
+                <Facebook className="h-5 w-5" />
               </a>
-              <a
-                href="https://instagram.com/carlux"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-400 hover:text-luxury-gold transition-colors duration-300"
-              >
-                <Instagram className="h-6 w-6" />
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-luxury-gold">
+                <Instagram className="h-5 w-5" />
               </a>
             </div>
           </div>
 
           {/* Services */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Services</h3>
-            <ul className="space-y-3">
-              <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Premium Wash</Link></li>
-              <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Interior Luxury</Link></li>
-              <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Paint Perfection</Link></li>
-              <li><Link href="#services" className="text-gray-300 hover:text-luxury-gold">Ceramic Shield</Link></li>
+          <div>
+            <h3 className="text-luxury-gold font-bold mb-4">Services</h3>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><Link href="#">Premium Wash</Link></li>
+              <li><Link href="#">Interior Luxury</Link></li>
+              <li><Link href="#">Paint Perfection</Link></li>
+              <li><Link href="#">Ceramic Shield</Link></li>
             </ul>
           </div>
 
           {/* Quick Links */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Quick Links</h3>
-            <ul className="space-y-3">
-              <li><Link href="#home" className="text-gray-300 hover:text-luxury-gold">Home</Link></li>
-              <li><Link href="#about" className="text-gray-300 hover:text-luxury-gold">About</Link></li>
-              <li><Link href="#gallery" className="text-gray-300 hover:text-luxury-gold">Gallery</Link></li>
-              <li><Link href="/booking" className="text-gray-300 hover:text-luxury-gold">Book Service</Link></li>
-              <li><Link href="#contact" className="text-gray-300 hover:text-luxury-gold">Contact</Link></li>
+          <div>
+            <h3 className="text-luxury-gold font-bold mb-4">Quick Links</h3>
+            <ul className="space-y-2 text-gray-400 text-sm">
+              <li><Link href="#">Home</Link></li>
+              <li><Link href="#">About</Link></li>
+              <li><Link href="#">Gallery</Link></li>
+              <li><Link href="#">Book Service</Link></li>
+              <li><Link href="#">Contact</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
-          <div className="flex flex-col items-start">
-            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Contact</h3>
-            <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <MapPin className="h-5 w-5 text-luxury-gold" />
-                <span className="text-gray-300">Canada Wide</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-luxury-gold" />
-                <a href="tel:+14384087454" className="text-gray-300 hover:text-luxury-gold">+1 438-408-7454</a>
-              </div>
-              <div className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-luxury-gold" />
-                <a href="mailto:yanislaroche@gmail.com" className="text-gray-300 hover:text-luxury-gold">yanislaroche@gmail.com</a>
-              </div>
-            </div>
+          <div>
+            <h3 className="text-luxury-gold font-bold mb-4">Contact</h3>
+            <ul className="space-y-3 text-gray-400 text-sm">
+              <li className="flex items-center space-x-2">
+                <MapPin className="h-4 w-4 text-luxury-gold" />
+                <span>Canada Wide</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Phone className="h-4 w-4 text-luxury-gold" />
+                <a href="tel:+14384087454">+1 438-408-7454</a>
+              </li>
+              <li className="flex items-center space-x-2">
+                <Mail className="h-4 w-4 text-luxury-gold" />
+                <a href="mailto:yanislaroche@gmail.com">yanislaroche@gmail.com</a>
+              </li>
+            </ul>
           </div>
         </div>
 
         {/* Bottom Bar */}
-        <div className="border-t border-luxury-gold/20 mt-12 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Carlux. All rights reserved. | Luxury Automotive Detailing Services
+        <div className="border-t border-gray-800 mt-8 pt-6 text-center">
+          <p className="text-gray-500 text-sm">
+            © 2024 Carlux. All rights reserved.
           </p>
         </div>
       </div>
