@@ -29,7 +29,7 @@ export default function Footer() {
               Where luxury meets perfection.
             </p>
             <div className="flex space-x-4 mt-4">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-luxury-gold">
+              <a href="https://www.facebook.com/CarLuxMobile" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-luxury-gold">
                 <Facebook className="h-5 w-5" />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-luxury-gold">

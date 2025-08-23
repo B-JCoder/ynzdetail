@@ -155,7 +155,7 @@ export default function ContactSection() {
 
     <div className="flex space-x-6 mb-8">
       <a
-        href="https://facebook.com/carlux"
+        href="https://www.facebook.com/CarLuxMobile"
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center w-14 h-14 bg-luxury-gold hover:bg-yellow-400 rounded-lg transition-colors duration-300"
