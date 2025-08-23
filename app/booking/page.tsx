@@ -51,7 +51,7 @@ export default function BookingPage() {
         {/* Header */}
         <div className="text-center mb-12 sm:mb-16 animate-slide-up">
           <h1 className="heading-lg text-luxury-gold mb-4 sm:mb-6 tracking-wide text-2xl sm:text-3xl md:text-4xl">
-            BOOK LUXURY SERVICE
+            BOOK SERVICE
           </h1>
           <div className="w-16 sm:w-20 h-1 bg-luxury-gold mx-auto mb-6 sm:mb-8"></div>
           <p className="text-luxury text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
