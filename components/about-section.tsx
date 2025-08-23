@@ -5,79 +5,81 @@ export default function AboutSection() {
   const features = [
     {
       icon: Award,
-      title: "Expert Craftsmanship",
-      description: "Years of experience in premium auto detailing",
+      title: "Master Craftsmanship",
+      description: "Decades of expertise in luxury automotive care",
     },
     {
       icon: Users,
-      title: "Customer First",
-      description: "Your satisfaction is our top priority",
+      title: "Client Excellence",
+      description: "Personalized service for discerning customers",
     },
     {
       icon: Clock,
-      title: "Timely Service",
-      description: "Efficient service without compromising quality",
+      title: "Precision Timing",
+      description: "Meticulous attention without compromise",
     },
     {
       icon: Shield,
-      title: "Quality Guarantee",
-      description: "100% satisfaction guarantee on all services",
+      title: "Luxury Guarantee",
+      description: "Uncompromising quality assurance",
     },
   ]
 
   return (
-    <section id="about" className="py-20 bg-gradient-to-b from-[#0B0D17] to-[#0A0F1C] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#F0E14A] mb-6 tracking-wider">ABOUT CARLUX</h2>
-            <div className="w-24 h-1 bg-[#00BFFF] mb-6"></div>
-            <p className="text-gray-300 text-lg mb-6 leading-relaxed">
-              At <span className="text-[#00BFFF] font-semibold">Carlux</span>, we're passionate about transforming your
-              vehicle into a masterpiece. With years of experience in the automotive detailing industry, we've built our
-              reputation on delivering exceptional results that exceed expectations.
-            </p>
-            <p className="text-gray-300 text-lg mb-8 leading-relaxed">
-              Our team of skilled professionals uses only the finest products and cutting-edge techniques to ensure your
-              vehicle receives the care it deserves. From paint correction to ceramic coating, we treat every car as if
-              it were our own.
+    <section id="about" className="section-padding bg-luxury-charcoal relative">
+      <div className="max-w-7xl mx-auto container-padding">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          <div className="animate-slide-up">
+            <h2 className="heading-lg text-luxury-gold mb-8 tracking-wide">ABOUT CARLUX</h2>
+            <div className="w-20 h-1 bg-luxury-gold mb-10"></div>
+
+            <p className="text-white text-xl mb-8 leading-relaxed">
+              At <span className="text-luxury-gold font-semibold">Carlux Montréal</span>, we redefine automotive
+              excellence. Our passion lies in transforming vehicles into masterpieces through meticulous attention to
+              detail and uncompromising quality standards.
             </p>
 
-            <div className="grid sm:grid-cols-2 gap-6">
+            <p className="text-white text-xl mb-12 leading-relaxed">
+              Every service is a testament to our commitment to luxury, precision, and the art of automotive perfection.
+              We don't just detail cars – we craft experiences that match the sophistication of Montréal's luxury
+              automotive scene.
+            </p>
+
+            <div className="grid sm:grid-cols-2 gap-8">
               {features.map((feature, index) => (
-                <div key={index} className="flex items-start space-x-3 p-4 glass-morphism rounded-lg">
-                  <div className="flex-shrink-0 p-2 hexagon-clip bg-[#00BFFF]">
-                    <feature.icon className="h-5 w-5 text-[#0A0F1C]" />
+                <div key={index} className="flex items-start space-x-4 hover-lift">
+                  <div className="flex-shrink-0 p-3 diamond-clip bg-luxury-gold">
+                    <feature.icon className="h-6 w-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-[#F0E14A] font-bold mb-1">{feature.title}</h3>
-                    <p className="text-gray-400 text-sm">{feature.description}</p>
+                    <h3 className="text-luxury-gold font-heading font-bold text-lg mb-2">{feature.title}</h3>
+                    <p className="text-white leading-relaxed">{feature.description}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
 
-          <div className="relative">
-            <Card className="glass-morphism border-[#00BFFF]">
-              <CardContent className="p-8">
+          <div className="relative animate-fade-in">
+            <Card className="glass-luxury border-luxury-gold hover-lift">
+              <CardContent className="p-10">
                 <img
                   src="/images/team-detailing.jpg"
-                  alt="Professional car detailing team at work"
-                  className="w-full h-64 object-cover rounded-lg mb-6"
+                  alt="Carlux Montréal professional team at work"
+                  className="w-full h-80 object-cover rounded-lg mb-8"
                 />
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  <div className="p-4 glass-morphism rounded-lg">
-                    <div className="text-2xl font-bold text-[#00BFFF]">5+</div>
-                    <div className="text-gray-300 text-sm">Years Experience</div>
+                <div className="grid grid-cols-3 gap-6 text-center">
+                  <div className="p-6 glass-luxury rounded-lg">
+                    <div className="text-3xl font-heading font-bold text-luxury-gold">10+</div>
+                    <div className="text-white text-sm mt-1">Years Excellence</div>
                   </div>
-                  <div className="p-4 glass-morphism rounded-lg">
-                    <div className="text-2xl font-bold text-[#8CC63F]">200+</div>
-                    <div className="text-gray-300 text-sm">Cars Detailed</div>
+                  <div className="p-6 glass-luxury rounded-lg">
+                    <div className="text-3xl font-heading font-bold text-luxury-gold">500+</div>
+                    <div className="text-white text-sm mt-1">Luxury Cars</div>
                   </div>
-                  <div className="p-4 glass-morphism rounded-lg">
-                    <div className="text-2xl font-bold text-[#F0E14A]">100%</div>
-                    <div className="text-gray-300 text-sm">Satisfaction</div>
+                  <div className="p-6 glass-luxury rounded-lg">
+                    <div className="text-3xl font-heading font-bold text-luxury-gold">100%</div>
+                    <div className="text-white text-sm mt-1">Satisfaction</div>
                   </div>
                 </div>
               </CardContent>

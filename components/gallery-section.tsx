@@ -29,16 +29,16 @@ export default function GallerySection() {
       category: "paint",
       beforeImage: "/images/car-washing-1.jpg",
       afterImage: "/images/paint-correction.jpg",
-      title: "Paint Correction",
-      description: "Scratch and swirl removal",
+      title: "Paint Perfection",
+      description: "Scratch and swirl removal mastery",
     },
     {
       id: 4,
       category: "ceramic",
       beforeImage: "/images/car-washing-2.jpg",
       afterImage: "/images/hero-car.jpg",
-      title: "Ceramic Coating",
-      description: "Long-lasting protection applied",
+      title: "Ceramic Shield",
+      description: "Ultimate protection applied",
     },
     {
       id: 5,
@@ -46,15 +46,15 @@ export default function GallerySection() {
       beforeImage: "/images/bmw-detailing.jpg",
       afterImage: "/images/team-detailing.jpg",
       title: "Paint Restoration",
-      description: "Professional team detailing",
+      description: "Professional luxury detailing",
     },
     {
       id: 6,
       category: "interior",
       beforeImage: "/images/interior-cleaning.jpg",
       afterImage: "/images/interior-detailing-2.jpg",
-      title: "Interior Detailing",
-      description: "Steam cleaning and conditioning",
+      title: "Interior Luxury",
+      description: "Premium cleaning and conditioning",
     },
   ]
 
@@ -70,14 +70,14 @@ export default function GallerySection() {
     activeFilter === "all" ? galleryItems : galleryItems.filter((item) => item.category === activeFilter)
 
   return (
-    <section id="gallery" className="py-20 bg-gradient-to-b from-[#0B0D17] to-[#0A0F1C] relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#F0E14A] mb-4 tracking-wider">OUR WORK GALLERY</h2>
-          <div className="w-24 h-1 bg-[#00BFFF] mx-auto mb-6"></div>
-          <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-8">
-            See the incredible transformations we've achieved for our clients. Every project showcases our commitment to
-            excellence.
+    <section id="gallery" className="section-padding bg-black relative geometric-bg">
+      <div className="max-w-7xl mx-auto container-padding">
+        <div className="text-center mb-20 animate-slide-up">
+          <h2 className="heading-lg text-luxury-gold mb-6 tracking-wide">LUXURY GALLERY</h2>
+          <div className="w-20 h-1 bg-luxury-gold mx-auto mb-8"></div>
+          <p className="text-luxury text-xl max-w-3xl mx-auto leading-relaxed mb-12">
+            Witness the extraordinary transformations achieved through our meticulous craftsmanship and attention to
+            detail.
           </p>
 
           {/* Filter Buttons */}
@@ -87,11 +87,7 @@ export default function GallerySection() {
                 key={filter.id}
                 variant={activeFilter === filter.id ? "default" : "outline"}
                 onClick={() => setActiveFilter(filter.id)}
-                className={
-                  activeFilter === filter.id
-                    ? "bg-[#00BFFF] hover:bg-[#1F75FE] text-[#0A0F1C] font-bold"
-                    : "border-[#00BFFF] text-[#00BFFF] hover:bg-[#00BFFF] hover:text-[#0A0F1C] bg-transparent font-bold"
-                }
+                className={activeFilter === filter.id ? "btn-luxury" : "btn-luxury-outline"}
               >
                 {filter.label}
               </Button>
@@ -99,11 +95,11 @@ export default function GallerySection() {
           </div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {filteredItems.map((item) => (
             <Card
               key={item.id}
-              className="glass-morphism overflow-hidden group hover:border-[#00BFFF] transition-all duration-300"
+              className="glass-luxury overflow-hidden group hover:border-luxury-gold transition-all duration-500 hover-lift"
             >
               <div className="relative">
                 <div className="grid grid-cols-2">
@@ -111,9 +107,9 @@ export default function GallerySection() {
                     <img
                       src={item.beforeImage || "/placeholder.svg"}
                       alt={`${item.title} - Before`}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 left-2 bg-[#FF3C38] text-white px-2 py-1 text-xs rounded font-bold">
+                    <div className="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 text-xs rounded font-bold">
                       BEFORE
                     </div>
                   </div>
@@ -121,17 +117,17 @@ export default function GallerySection() {
                     <img
                       src={item.afterImage || "/placeholder.svg"}
                       alt={`${item.title} - After`}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                     />
-                    <div className="absolute top-2 right-2 bg-[#8CC63F] text-[#0A0F1C] px-2 py-1 text-xs rounded font-bold">
+                    <div className="absolute top-3 right-3 bg-luxury-gold text-black px-3 py-1 text-xs rounded font-bold">
                       AFTER
                     </div>
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h3 className="text-[#F0E14A] font-bold text-lg mb-2">{item.title}</h3>
-                  <p className="text-gray-300 text-sm">{item.description}</p>
+                <div className="p-8">
+                  <h3 className="text-luxury-gold font-heading font-bold text-xl mb-3">{item.title}</h3>
+                  <p className="text-gray-300 leading-relaxed">{item.description}</p>
                 </div>
               </div>
             </Card>

@@ -1,67 +1,62 @@
 import Link from "next/link"
-import { Car, Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react"
+import { Facebook, Instagram, MapPin, Phone, Mail } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-black border-t border-luxury-gold/20">
+      <div className="max-w-7xl mx-auto container-padding py-16">
+        <div className="grid md:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center space-x-2 mb-4">
-              <Car className="h-8 w-8 text-blue-500" />
-              <span className="text-2xl font-bold text-white">Carlux</span>
+            <Link href="/" className="flex items-center space-x-3 mb-6">
+              <div className="w-10 h-10 diamond-clip bg-luxury-gold"></div>
+              <span className="text-3xl font-heading font-bold text-luxury-gold">Carlux</span>
             </Link>
-            <p className="text-gray-300 mb-4">
-              Premium car detailing services across Canada. Transform your vehicle with our professional care.
+            <p className="text-gray-300 mb-6 leading-relaxed">
+              Premium automotive detailing services across Canada. Where luxury meets perfection.
             </p>
             <div className="flex space-x-4">
               <a
                 href="https://facebook.com/carlux"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-blue-400 transition-colors"
+                className="text-gray-400 hover:text-luxury-gold transition-colors duration-300"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-6 w-6" />
               </a>
               <a
                 href="https://instagram.com/carlux"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-gray-400 hover:text-pink-400 transition-colors"
+                className="text-gray-400 hover:text-luxury-gold transition-colors duration-300"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-6 w-6" />
               </a>
             </div>
           </div>
 
           {/* Services */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
-            <ul className="space-y-2">
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Services</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="#services" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Exterior Cleaning
+                <Link href="#services" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  Premium Wash
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Interior Detailing
+                <Link href="#services" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  Interior Luxury
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Paint Correction
+                <Link href="#services" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  Paint Perfection
                 </Link>
               </li>
               <li>
-                <Link href="#services" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Ceramic Coating
-                </Link>
-              </li>
-              <li>
-                <Link href="#services" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Full Detail Package
+                <Link href="#services" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  Ceramic Shield
                 </Link>
               </li>
             </ul>
@@ -69,31 +64,26 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Quick Links</h3>
+            <ul className="space-y-3">
               <li>
-                <Link href="#home" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <Link href="#home" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#about" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  About Us
+                <Link href="#about" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  About
                 </Link>
               </li>
               <li>
-                <Link href="#gallery" className="text-gray-300 hover:text-blue-400 transition-colors">
+                <Link href="#gallery" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
                   Gallery
                 </Link>
               </li>
               <li>
-                <Link href="#contact" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/booking" className="text-gray-300 hover:text-blue-400 transition-colors">
-                  Book Now
+                <Link href="/booking" className="text-gray-300 hover:text-luxury-gold transition-colors duration-300">
+                  Book Service
                 </Link>
               </li>
             </ul>
@@ -101,21 +91,27 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
-            <div className="space-y-3">
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4 text-blue-400" />
-                <span className="text-gray-300 text-sm">Canada Wide Service</span>
+            <h3 className="text-luxury-gold font-heading font-bold text-lg mb-6">Contact</h3>
+            <div className="space-y-4">
+              <div className="flex items-center space-x-3">
+                <MapPin className="h-5 w-5 text-luxury-gold" />
+                <span className="text-gray-300">Canada Wide</span>
               </div>
-              <div className="flex items-center space-x-2">
-                <Phone className="h-4 w-4 text-blue-400" />
-                <a href="tel:+14384087454" className="text-gray-300 text-sm hover:text-blue-400">
+              <div className="flex items-center space-x-3">
+                <Phone className="h-5 w-5 text-luxury-gold" />
+                <a
+                  href="tel:+14384087454"
+                  className="text-gray-300 hover:text-luxury-gold transition-colors duration-300"
+                >
                   +1 438-408-7454
                 </a>
               </div>
-              <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4 text-blue-400" />
-                <a href="mailto:yanislaroche@gmail.com" className="text-gray-300 text-sm hover:text-blue-400">
+              <div className="flex items-center space-x-3">
+                <Mail className="h-5 w-5 text-luxury-gold" />
+                <a
+                  href="mailto:yanislaroche@gmail.com"
+                  className="text-gray-300 hover:text-luxury-gold transition-colors duration-300"
+                >
                   yanislaroche@gmail.com
                 </a>
               </div>
@@ -123,10 +119,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400 text-sm">
-            © 2024 Carlux. All rights reserved. | Professional Car Detailing Services in Canada
-          </p>
+        <div className="border-t border-luxury-gold/20 mt-12 pt-8 text-center">
+          <p className="text-gray-400">© 2024 Carlux. All rights reserved. | Luxury Automotive Detailing Services</p>
         </div>
       </div>
     </footer>

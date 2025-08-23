@@ -28,71 +28,71 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? "glass-morphism shadow-lg" : "bg-transparent"
+      className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+        isScrolled ? "glass-luxury shadow-2xl" : "bg-transparent"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <Link href="/" className="flex items-center space-x-3">
-            <div className="relative w-12 h-12 hexagon-clip bg-gradient-to-br from-blue-400 to-blue-600 p-0.5">
+      <div className="max-w-7xl mx-auto container-padding">
+        <div className="flex justify-between items-center h-20">
+          <Link href="/" className="flex items-center space-x-4">
+            <div className="relative w-16 h-16">
               <Image
-                src="/images/logo.jpg"
-                alt="Carlux Logo"
-                width={48}
-                height={48}
-                className="w-full h-full object-contain hexagon-clip"
+                src="/images/carlux-logo.png"
+                alt="Carlux Montréal Logo"
+                width={64}
+                height={64}
+                className="w-full h-full object-contain"
               />
             </div>
-            <span className="text-2xl font-bold ynz-yellow tracking-wider">CARLUX</span>
+            <div className="flex flex-col">
+              <span className="text-2xl font-heading font-bold text-white tracking-wider">CARLUX</span>
+              <span className="text-sm text-luxury-gold font-medium tracking-widest">MONTRÉAL</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-12">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-blue-400 transition-colors duration-200 font-medium"
+                className="text-white hover:text-luxury-gold transition-colors duration-300 font-medium text-lg"
               >
                 {item.name}
               </Link>
             ))}
             <Link href="/booking">
-              <Button className="bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan transition-all duration-300 animate-glow">
-                Book Now
-              </Button>
+              <Button className="btn-luxury animate-gold-glow">Book Now</Button>
             </Link>
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="text-gray-300 hover:text-blue-400">
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <div className="lg:hidden">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="text-white hover:text-luxury-gold transition-colors duration-300"
+            >
+              {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden glass-morphism">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="lg:hidden glass-luxury mt-4 rounded-lg">
+            <div className="px-6 py-4 space-y-4">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-300 hover:text-blue-400 transition-colors duration-200"
+                  className="block text-white hover:text-luxury-gold transition-colors duration-300 text-lg"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
                 </Link>
               ))}
               <Link href="/booking">
-                <div className="px-3 py-2">
-                  <Button className="w-full bg-ynz-yellow hover:bg-yellow-400 text-gray-900 font-bold border-2 border-ynz-cyan">
-                    Book Now
-                  </Button>
-                </div>
+                <Button className="w-full btn-luxury mt-4">Book Now</Button>
               </Link>
             </div>
           </div>
