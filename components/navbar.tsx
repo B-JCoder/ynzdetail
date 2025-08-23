@@ -34,21 +34,23 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto container-padding">
         <div className="flex justify-between items-center h-20">
-          <Link href="/" className="flex items-center space-x-4">
-            <div className="relative w-16 h-16">
-              <Image
-                src="/images/carlux-logo.png"
-                alt="Carlux Montréal Logo"
-                width={64}
-                height={64}
-                className="w-full h-full object-contain"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="text-2xl font-heading font-bold text-white tracking-wider">CARLUX</span>
-              <span className="text-sm text-luxury-gold font-medium tracking-widest">MONTRÉAL</span>
-            </div>
-          </Link>
+        <Link href="/" className="flex items-center space-x-4">
+  <div className="relative w-24 h-24"> {/* Bara size */}
+    <Image
+      src="/images/logo.png"
+      alt="Carlux Montréal Logo"
+      width={120}
+      height={120}
+      className="w-full h-full object-contain drop-shadow-[0_0_15px_rgba(255,215,0,0.5)]"
+    />
+  </div>
+  <div className="flex flex-col">
+    <span className="text-3xl font-heading font-bold text-white tracking-wider">CARLUX</span>
+    <span className="text-base text-luxury-gold font-medium tracking-widest">MONTRÉAL</span>
+  </div>
+</Link>
+
+
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-12">
