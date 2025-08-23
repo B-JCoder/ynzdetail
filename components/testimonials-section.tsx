@@ -96,10 +96,15 @@ export default function TestimonialsSection() {
                 <Star key={i} className="h-8 w-8 text-luxury-gold fill-current" />
               ))}
             </div>
-            <div className="text-left">
-              <div className="text-3xl font-heading font-bold text-luxury-gold">5.0 Rating</div>
-              <div className="text-gray-300 text-lg">Based on 200+ luxury clients</div>
-            </div>
+            <div className="text-left sm:text-center md:text-left">
+  <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-luxury-gold">
+    5.0 Rating
+  </div>
+  <div className="text-sm sm:text-base md:text-lg text-gray-300 mt-1">
+    Based on 200+ luxury clients
+  </div>
+</div>
+
           </div>
         </div>
       </div>

@@ -61,29 +61,45 @@ export default function AboutSection() {
           </div>
 
           <div className="relative animate-fade-in">
-            <Card className="glass-luxury border-luxury-gold hover-lift">
-              <CardContent className="p-10">
-                <img
-                  src="/images/team-detailing.jpg"
-                  alt="Carlux Montréal professional team at work"
-                  className="w-full h-80 object-cover rounded-lg mb-8"
-                />
-                <div className="grid grid-cols-3 gap-6 text-center">
-                  <div className="p-6 glass-luxury rounded-lg">
-                    <div className="text-3xl font-heading font-bold text-luxury-gold">10+</div>
-                    <div className="text-white text-sm mt-1">Years Excellence</div>
-                  </div>
-                  <div className="p-6 glass-luxury rounded-lg">
-                    <div className="text-3xl font-heading font-bold text-luxury-gold">500+</div>
-                    <div className="text-white text-sm mt-1">Luxury Cars</div>
-                  </div>
-                  <div className="p-6 glass-luxury rounded-lg">
-                    <div className="text-3xl font-heading font-bold text-luxury-gold">100%</div>
-                    <div className="text-white text-sm mt-1">Satisfaction</div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+           <Card className="glass-luxury border-luxury-gold hover-lift max-w-5xl mx-auto my-8 sm:my-12 lg:my-16">
+  <CardContent className="p-4 sm:p-6 md:p-8 lg:p-10">
+    <img
+      src="/images/team-detailing.jpg"
+      alt="Carlux Montréal professional team at work"
+      className="w-full h-48 sm:h-64 md:h-72 lg:h-80 object-cover rounded-xl mb-6 sm:mb-8"
+    />
+
+    <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
+      <div className="p-4 sm:p-6 glass-luxury rounded-lg">
+        <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-luxury-gold">
+          10+
+        </div>
+        <div className="text-xs sm:text-sm md:text-base text-white mt-1">
+          Years Excellence
+        </div>
+      </div>
+
+      <div className="p-4 sm:p-6 glass-luxury rounded-lg">
+        <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-luxury-gold">
+          500+
+        </div>
+        <div className="text-xs sm:text-sm md:text-base text-white mt-1">
+          Luxury Cars
+        </div>
+      </div>
+
+      <div className="p-4 sm:p-6 glass-luxury rounded-lg">
+        <div className="text-2xl sm:text-3xl md:text-4xl font-heading font-bold text-luxury-gold">
+          100%
+        </div>
+        <div className="text-xs sm:text-sm md:text-base text-white mt-1">
+          Satisfaction
+        </div>
+      </div>
+    </div>
+  </CardContent>
+</Card>
+
           </div>
         </div>
       </div>
